@@ -1,0 +1,43 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type = 'text/css' href="bootstrap.min.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js"></script>
+    <script src='index.js'></script>
+    <title>Graph</title>
+</head>
+<body>
+    <style type="text/css">
+        label {
+        width: 40px;
+        display: inline-block;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .graph {
+            margin-top: 10px;
+            border:1px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        input {
+        width: 260px;
+        }
+    </style>
+    <div class="container" align="center">
+        <form>
+            <label>From: </label>
+            <input class="from"><br>
+            <label>To: </label>
+            <input class="to"><br>
+            <label>Fun: </label>
+            <input class="fun"><br>
+        </form>
+        <button class="plot btn-primary" type="button" style="margin-left: 260px">Plot!</button><br>
+        <div class="graph"></div>
+    </div>
+</body>
+</html>
